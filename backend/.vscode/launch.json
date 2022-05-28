@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Attach",
+        "port": 9229,
+        "request": "attach",
+        "address": "0.0.0.0",
+        "remoteRoot": "/npatel/src/app",
+        "skipFiles": [
+          "<node_internals>/**"
+        ],
+        "type": "node"
+      },
+      {
+        "type": "node",
+        "request": "attach",
+        "name": "Debug: nest js real time chat",
+        "remoteRoot": "/npatel/src/app",
+        "localRoot": "${workspaceFolder}",
+        "port": 9229,
+        "restart": true,
+        "address": "0.0.0.0",
+        "skipFiles": [
+          "<node_internals>/**"
+        ]
+      }
+    ]
+  }
